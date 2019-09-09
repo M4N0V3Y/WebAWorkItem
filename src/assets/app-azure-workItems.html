@@ -1,0 +1,33 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * AZURE Work Items HTML Template* * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- Toolbar -->
+<div style="text-align:left;width:500px;">
+    <h3>{{ title }}</h3>
+
+    <table *ngIf="arrWI">
+        <!-- ADD HEADERS -->
+        <tr>
+            <th>ID</th>
+                <th>State</th>
+				 <th>Title</th>
+                    <th>Date of last change</th>
+        </tr>
+
+        <!-- BIND ARRAY TO TABLE -->
+        <tr *ngFor="let work of arrWI">
+            <td>{{work.wItemId}}</td>
+			<td>{{work.State}}</td>
+                <td>{{work.Title}}</td>
+                    <td>{{work.Changed_Date}}</td>
+        </tr>
+    </table>
+</div>
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
